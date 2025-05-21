@@ -9,7 +9,7 @@ from datetime import datetime  # Used to create timestamped log filenames
 LOG_DIR = 'logs'  # Directory where log files will be saved
 LOG_FILE = f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"  # Log file name with timestamp
 MAX_LOG_SIZE = 5 * 1024 * 1024  # Maximum size per log file: 5 MB
-BACKUP_COUNT = 3  # Number of backup log files to keep
+BACKUP_COUNT = 3  # Number of backup log files co keep
 
 # Ensure the logs directory exists; create if not
 log_dir_path = os.path.join(from_root(), LOG_DIR)
